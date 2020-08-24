@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: 
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: userapp
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    view:
+      prefix: ./views/
+      suffix: .jsp
+server:
+  port: 9191
+  mail:
+    host: smtp.gmail.com
+    password: 90288848305591
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+          timeout: 5000
+          writetimeout: 5000
+    username: omkulkarni5591@gmail.com
